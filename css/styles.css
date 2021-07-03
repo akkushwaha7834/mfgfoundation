@@ -1,0 +1,102 @@
+.web_logo{
+	width: 80px;
+}
+/*********************/
+/*     05. Intro     */
+/*********************/
+.basic-1 {
+	padding-top: 6.5rem;
+	padding-bottom: 3rem;
+}
+
+.basic-1 .text-container {
+	margin-bottom: 3rem;
+}
+
+.basic-1 .section-title {
+	margin-bottom: 0.5rem;
+}
+
+.basic-1 h2 {
+	margin-bottom: 1.375rem;
+}
+
+.basic-1 .testimonial-author {
+	color: #484a46;
+}
+
+/* Hover Animation */
+.basic-1 .image-container {
+	overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.basic-1 .image-container img {
+	margin: 0;
+	border-radius: 0.25rem;
+	transition: all 0.3s;
+}
+
+.basic-1 .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} 
+/* end of hover animation */
+
+
+.theme-btn i {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #005ca1;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 900ms ease;
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+.theme-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 17px;
+  padding: 12px 50px 12px 50px;
+  background: #fff;
+  line-height: 26px;
+  color: #005ca1;
+  border: 2px solid #005ca1;
+  font-weight: 700;
+  border-radius: 30px;
+  text-transform: capitalize;
+  transition: all 500ms ease;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-btn:hover:before {
+    transform: scale(1, 1);
+    transform-origin: bottom left;
+}
+.theme-btn:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #005ca1;
+    border-radius: 30px;
+    transform: scale(0, 1);
+    transform-origin: top right;
+    transition: transform 500ms;
+}
+.theme-btn:hover {
+    color: #fff;
+}
